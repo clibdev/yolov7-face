@@ -1,15 +1,10 @@
-# yolov7-face
+# Fork of [derronqi/yolov7-face](https://github.com/derronqi/yolov7-face)
 
-**2023.04** [yolov8-face](https://github.com/derronqi/yolov8-face) (🔥🔥🔥↑) 
+# Installation
 
-### New feature
-
-* Dynamic keypoints
-* WingLoss
-* Efficient backbones
-* EIOU and SIOU
-
-
+```shell
+pip install -r requirements.txt
+```
 
 | Method           |  Test Size | Easy  | Medium | Hard  | FLOPs (B) @640 | Google | Baidu |
 | -----------------| ---------- | ----- | ------ | ----- | -------------- | ------ | ----- |
