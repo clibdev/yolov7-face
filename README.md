@@ -1,5 +1,11 @@
 # Fork of [derronqi/yolov7-face](https://github.com/derronqi/yolov7-face)
 
+Differences between original repository and fork:
+
+* Compatibility with PyTorch >=2.0. (🔥)
+* The following deprecations has been fixed:
+  * UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. 
+
 # Installation
 
 ```shell
