@@ -7,6 +7,7 @@ Differences between original repository and fork:
 * The [wider_val.txt](data/widerface/val/wider_val.txt) file for WIDERFace evaluation.
 * The following deprecations has been fixed:
   * UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. 
+  * DeprecationWarning: 'np.float' is a deprecated alias for builtin 'float'.
 
 # Installation
 
@@ -31,6 +32,24 @@ pip install -r requirements.txt
 
 ```shell
 python detect.py --weights yolov7s-face.pt --source data/images/22_Picnic_Picnic_22_10.jpg
+```
+
+# WIDERFace evaluation
+
+* Download WIDERFace [validation dataset](https://drive.google.com/file/d/1GUCogbp16PMGa39thoMMeWxp7Rp5oM8Q/view).
+* Move dataset to `data/widerface/val` directory.
+
+```shell
+python test_widerface.py --weights yolov7s-face.pt --dataset_folder data/widerface/val/images/
+```
+```shell
+cd widerface_evaluate
+```
+```shell
+python setup.py build_ext --inplace
+```
+```shell
+python evaluation.py
 ```
 
 # Export to ONNX format
